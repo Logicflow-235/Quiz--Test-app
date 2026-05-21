@@ -7,7 +7,14 @@ import { restartQuiz } from "../features/quiz/quizSlice";
         <div>
             <h1>Quiz Finished</h1>
             <h2>your Score:{score} out of {questions.length}</h2>
-            <button onClick={()=>dispatch(restartQuiz())}>Restart Quiz 🔄️</button>
+            <button style={{
+                backgroundColor: "#233028",
+            color: "white",
+            margin: "10px 5px",
+            padding: "10px 20px",
+            cursor: "pointer",
+            }}
+            onClick={()=>dispatch(restartQuiz())}>Restart Quiz 🔄️</button>
         </div>
     );
 

@@ -15,8 +15,10 @@ return(
           key={answer}
           onClick={() => dispatch(selectAnswer(answer))}
           style={{
-            backgroundColor: selectedAnswer === answer ? "blue" : "gray",
-            color: "white",
+            backgroundColor: selectedAnswer === answer ? "#3D5A47" : "#6B8F71",
+            fontSize:'1.0rem',
+            border: '0.5px solid #6B8F71',
+            color: "#FDFAF5",
             margin: "5px",
             padding: "10px",
             cursor: "pointer",
@@ -30,7 +32,7 @@ return(
   <button
           onClick={() => dispatch(nextQuestion())}
           style={{
-            backgroundColor: "green",
+            backgroundColor: "#233028",
             color: "white",
             margin: "10px 5px",
             padding: "10px 20px",
